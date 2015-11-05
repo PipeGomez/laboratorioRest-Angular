@@ -9,7 +9,7 @@ app.controller("blogCtrl", function($scope,$log,$http) {
     $scope.loadData = function() {
         var configList = {
                 method: "GET",
-                url: "blogs"
+                url: "http://10.2.67.81:8080/blogs"
                     };
 
         var response=$http(configList);
