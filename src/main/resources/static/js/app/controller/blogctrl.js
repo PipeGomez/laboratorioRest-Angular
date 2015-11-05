@@ -9,7 +9,7 @@ app.controller("blogCtrl", function($scope,$log,$http) {
     $scope.loadData = function() {
         var configList = {
                 method: "GET",
-                url: "http://10.2.67.81:8080/blogs"
+                url: "http://localhost:8080/blogs"
                     };
 
         var response=$http(configList);
@@ -27,7 +27,7 @@ app.controller("blogCtrl", function($scope,$log,$http) {
         $log.debug($scope.entry);
         $http({
             method  : 'POST',
-            url     : 'blog',
+            url     : 'http://10.2.67.81:8080/blog',
             data    : $scope.entry
         }).success(function(data) {
             console.log(data);
