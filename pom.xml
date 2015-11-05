@@ -1,32 +1,49 @@
-package edu.eci.arsw.model;
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-public class Entry {
+    <groupId>edu.eci.arsw</groupId>
+    <artifactId>angular-spring</artifactId>
+    <version>0.1.0</version>
 
-    private String title;
-    private String content;
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.2.7.RELEASE</version>
+    </parent>
 
-    public Entry() {
-    }
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 
-    public Entry(String title, String content) {
-        this.title = title;
-        this.content = content;
-    }
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
-    public String getTitle() {
-            return title;
-    }
 
-    public String getContent() {
-        return content;
-    }
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
-    public void setTitle(String title) {
-            this.title = title;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-}
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
