@@ -11,12 +11,20 @@
     </head>
     <body ng-controller="blogCtrl">
             <div>
+<<<<<<< HEAD
           <form ng-submit="processForm()">
+=======
+          <form>
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5
             <fieldset>
                 <legend>Entry</legend>
                 <label for='title'>Title:</label><input id='title' name='title' type="text" ng-model= "entry.title">
                 <label for='content'>Content:</label><input id='content' name='content' type="text" ng-model= "entry.content">
+<<<<<<< HEAD
 		 		<button type="submit" class="btn btn-success">
+=======
+		 <button type="submit" class="btn btn-success">
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5
                   <span class="glyphicon glyphicon-plus">Crear
                 </button>
           </form>
@@ -26,13 +34,17 @@
             <th>Título </th>
             <th>Contenido</th>
             <th>Editar </th>
+<<<<<<< HEAD
             <th>Eliminar </th>
+=======
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5
           </tr>
 
           <tr ng-repeat="e in entries">
             <td> {{ e.title }} </td>
             <td> {{ e.content }} </td>
             <td>
+<<<<<<< HEAD
                 <a href="/edit.html"> 
                     <button type="button" class="btn btn-warning"  ng-click="processEdit($index)">
                         <span class="glyphicon glyphicon-edit"> Editar
@@ -48,6 +60,12 @@
 		<span class="glyphicon glyphicon-minus"> Eliminar
             </button>			                                           
           </td>
+=======
+              <button type="button" class="btn btn-warning"  ng-click="edit($index)">
+                Editar
+              </button>
+            </td>
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5
           </tr>
         </table>
     </body>

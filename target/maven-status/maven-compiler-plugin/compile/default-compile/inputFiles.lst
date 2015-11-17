@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 /media/2092252/HOMERO USB/labAngular-Rest10Nov3/labGitHub/src/main/java/edu/eci/arsw/controller/EntryController.java
 /media/2092252/HOMERO USB/labAngular-Rest10Nov3/labGitHub/src/main/java/edu/eci/arsw/model/Entry.java
 /media/2092252/HOMERO USB/labAngular-Rest10Nov3/labGitHub/src/main/java/edu/eci/arsw/Application.java
 /media/2092252/HOMERO USB/labAngular-Rest10Nov3/labGitHub/src/main/java/edu/eci/arsw/SimpleCORSFilter.java
+=======
+/media/2093182/MIO/ECI/8.SEMESTRE/ARSW/lab_rest-angular-git/labGitHub/src/main/java/edu/eci/arsw/controler/EntryController.java
+/media/2093182/MIO/ECI/8.SEMESTRE/ARSW/lab_rest-angular-git/labGitHub/src/main/java/edu/eci/arsw/Application.java
+/media/2093182/MIO/ECI/8.SEMESTRE/ARSW/lab_rest-angular-git/labGitHub/src/main/java/edu/eci/arsw/SimpleCORSFilter.java
+/media/2093182/MIO/ECI/8.SEMESTRE/ARSW/lab_rest-angular-git/labGitHub/src/main/java/edu/eci/arsw/model/Entry.java
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5

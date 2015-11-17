@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var app = angular.module("app", []);
 
 app.controller("blogCtrl", function ($scope, $log, $http) {
@@ -35,11 +36,46 @@ app.controller("blogCtrl", function ($scope, $log, $http) {
             url: 'http://10.2.67.89:8080/blog',
             data: $scope.entry
         }).success(function (data) {
+=======
+var app = angular.module("app",[]);
+
+app.controller("blogCtrl", function($scope,$log,$http) {
+    $scope.entry = {title : "Title",
+                    content : "Content"};
+    $scope.entries = [];
+    $log.debug('se creo el $scope');
+
+    $scope.loadData = function() {
+        var configList = {
+                method: "GET",
+                url: "http://localhost:8080/blogs"
+                    };
+
+        var response=$http(configList);
+
+        response.success(function(data, status, headers, config) {
+            $scope.entries = data;
+            });
+
+        response.error(function(data, status, headers, config) {
+            alert("Ha fallado la petición. Estado HTTP:"+status);
+            });
+    };
+    $scope.loadData();
+    $scope.processForm = function() {
+        $log.debug($scope.entry);
+        $http({
+            method  : 'POST',
+            url     : 'http://10.2.67.81:8080/blog',
+            data    : $scope.entry
+        }).success(function(data) {
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5
             console.log(data);
             $scope.loadData();
         });
     };
 
+<<<<<<< HEAD
 
     /**
      * editEntry
@@ -83,4 +119,7 @@ app.controller("blogCtrl", function ($scope, $log, $http) {
         });
     };
 
+=======
+	
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5
 });

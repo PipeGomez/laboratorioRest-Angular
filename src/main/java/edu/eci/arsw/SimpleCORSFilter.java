@@ -25,4 +25,8 @@ public class SimpleCORSFilter implements Filter {
 
 	public void destroy() {}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1ff3698b00ed74c3ed9b442a92da9d04629c84f5
